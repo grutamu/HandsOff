@@ -1,8 +1,6 @@
 ho = {}
 ho.enabled = false
-function ho:debug(message)
-	print(message)
-end
+
 
 function ho:Run()
 
@@ -15,8 +13,7 @@ function ho:Run()
 	-- Macro Toggle ON/OFF
 	SLASH_HandsOff1 = "/HandsOff"
 	function SlashCmdList.HandsOff(msg, editbox, ...)
-		print(...)
-		
+	
 		if ho.enabled then
 			ho.enabled = false
 		else

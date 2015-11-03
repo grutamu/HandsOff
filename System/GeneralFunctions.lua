@@ -5,6 +5,18 @@ if not FuncLoaded then
 		if debug then
 		end
 	end
+
+	function chatPrint(...)
+		if ( DEFAULT_CHAT_FRAME ) then
+			local msg = ""
+			for i=1, table.getn(arg) do
+				if i==1 then msg = arg[i]
+				else msg = msg.." "..arg[i]
+				end
+			end
+			DEFAULT_CHAT_FRAME:AddMessage(msg, 1.0, 0.35, 0.15)
+		end
+	end
 	
 	function CalculateHP(t)
 		local ActualWithIncoming = 100 * UnitHealth(t) / UnitHealthMax(t)

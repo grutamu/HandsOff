@@ -3,7 +3,7 @@
 ## Title: Hands Off
 
 HandsOff.lua
-Core\GeneralFunctions.lua
+System\GeneralFunctions.lua
+System\Core.lua
 
-
-Classes\Rogue\rogue.lua
+Rotations\Rogue\rogue.lua

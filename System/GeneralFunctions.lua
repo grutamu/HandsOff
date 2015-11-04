@@ -6,7 +6,7 @@ if not FuncLoaded then
 		end
 	end
 
-	function chatPrint(...)
+	function print(...)
 		if ( DEFAULT_CHAT_FRAME ) then
 			local msg = ""
 			for i=1, table.getn(arg) do

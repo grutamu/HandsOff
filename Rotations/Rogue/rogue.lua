@@ -1,5 +1,12 @@
 function RogueRotation()
-print("This is the Rogue Rotation for now!")
+
+ChatOverlay("test?!?!")
+
+--ComboPoints = GetComboPoints()
+--Energy = UnitPower("player")
+
+
+
 
 
 end
